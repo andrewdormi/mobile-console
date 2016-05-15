@@ -45,7 +45,7 @@
         window.addEventListener('load', onDOMLoaded);
     }
 
-    function removeListeners(){
+    function removeListeners() {
         window.removeEventListener('load', onDOMLoaded);
         window.onerror = oldOnError;
     }
@@ -137,9 +137,9 @@
         this.message(msg, 'error');
     };
 
-    function initErrorListener(){
-        window.onerror = function(msg, url, line){
-            if(oldOnError)
+    function initErrorListener() {
+        window.onerror = function (msg, url, line) {
+            if (oldOnError)
                 oldOnError(msg, url, line);
             console.error(msg);
         };
@@ -156,8 +156,8 @@
     };
 
     if (typeof define == 'function' && define.amd) {
-        define('mobileConsole', [], function() {
+        define('mobileConsole', [], function () {
             return mobileConsole;
         });
     }
-})();
+}());
