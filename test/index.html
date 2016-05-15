@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
     <meta charset="UTF-8">
     <title></title>
-    <script src="../index.js" type="text/javascript"></script>
+    <script src="../index.min.js" type="text/javascript"></script>
     <script>
+        mobileConsole.init();
+        console.log('before load 1');
+        console.warn('before load 2');
         window.onload = function () {
-            mobileConsole.init();
             console.log('qweqweqwe');
             console.warn('qweqweqwesasd');
             console.error('qweqweqwesasd');
