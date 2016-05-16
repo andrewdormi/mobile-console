@@ -15,12 +15,11 @@
     var beforeDomReadyQueue = [];
     var oldOnError = window.onerror;
 
-    var mobileConsole = function () {
-    };
+    function mobileConsole() {}
 
     window.mobileConsole = mobileConsole;
 
-    mobileConsole.init = function () {
+    mobileConsole.prototype.init = mobileConsole.init = function () {
         initEventListeners();
         if (document.readyState === "complete") {
             initUI();
@@ -31,7 +30,7 @@
         initErrorListener();
     };
 
-    mobileConsole.dispose = function () {
+    mobileConsole.prototype.dispose = mobileConsole.dispose = function () {
         removeListeners();
         document.body.removeChild(componentContainer);
         window.console = consoleHolder;

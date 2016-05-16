@@ -3,7 +3,7 @@ var webpack = require('webpack');
 var BUILD_PATH = './';
 
 module.exports = {
-    entry: './src/index.js',
+    entry: './index.js',
     output: {
         path: BUILD_PATH,
         filename: 'index.min.js'
