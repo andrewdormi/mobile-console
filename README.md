@@ -14,7 +14,7 @@
 
 Simple html including:
 ```html
-  <script src="./node_modules/mobileConsole/index.min.js" type="text/javascript"></script>
+  <script src="./node_modules/mobile-console/index.min.js" type="text/javascript"></script>
 ```
 ```js
   mobileConsole.init();

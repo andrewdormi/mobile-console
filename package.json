@@ -1,6 +1,6 @@
 {
   "name": "mobile-console",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Console for mobile device",
   "main": "index.min.js",
   "keywords": [
