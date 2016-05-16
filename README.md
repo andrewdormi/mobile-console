@@ -8,10 +8,9 @@
 > npm install mobile-console
 
 ###Overview
-
+[Demo](http://andrewdormi.github.io/mobile-console/).
 
 ### Usage
-
 Simple html including:
 ```html
   <script src="./node_modules/mobile-console/index.min.js" type="text/javascript"></script>
